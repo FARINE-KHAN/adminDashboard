@@ -1,0 +1,93 @@
+.sidebar {
+    position: fixed;
+    display: flex;
+    align-self: start;
+    flex-direction: column;
+    height: 100vh;
+    width: 15vw;
+    background-color:  rgb(11, 11, 11);
+}
+.logo{
+    display: flex;
+    align-items: center;
+    background-color: transparent;
+    gap: 1rem;
+    margin: 1rem;
+}
+.logo img{
+    height: 6vh;
+    background-color: transparent;
+    cursor: pointer;
+}
+
+.logo h3{
+    background-color: transparent;
+    cursor: pointer;
+}
+
+.sidebar .li{ 
+    display: flex;
+    flex-direction: column;
+    height: 45vh;
+    justify-content: space-evenly;
+    margin-top: 3rem;
+    margin-left: 1.5rem;
+    background-color: transparent;
+
+}
+.li h5{
+    background-color: transparent;
+    display: flex;
+    gap: 1.5rem;
+    cursor: pointer;
+    color: gray;
+    border-radius: 12px;
+    align-items: center;
+    padding: 12px 15px;
+    
+}
+.li i {
+    color: gray;
+    background-color: transparent;
+}
+.li i:hover{
+    color: #fff;
+}
+.li h5:hover {
+    color: #fff;
+}
+.li h5:nth-child(1){
+    color: #fff;
+    background-color:rgb(29, 29, 29) ;
+}
+.li  span {
+    background-color: var(--orange);
+    border-radius: 50%;
+    padding: 2px 4px;
+}
+.nav-btn{
+    background-color: transparent;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    top: 25%;
+}
+.nav-btn button{
+    padding: 12px 20px;
+    cursor: pointer;
+    border: none;
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    background-color: var(--main);
+    font-weight: bold;
+}
+.nav-btn button:hover{
+    background-color: var(--mainHover);
+}
+.nav-btn i{
+    background-color: transparent;
+    font-size: medium;
+}

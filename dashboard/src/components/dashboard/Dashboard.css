@@ -1,0 +1,314 @@
+.dashboard {
+    display: flex;
+}
+
+.dashboard .dash-body {
+    margin-left: 15rem;
+    width: 100%;
+}
+
+.dash-body .search {
+    display: flex;
+    justify-content: space-between;
+    padding: 15px 15px;
+    width: 100%;
+}
+
+.dash-body .search .bar {
+    display: flex;
+    align-items: center;
+    background-color: rgb(29, 29, 29);
+    padding: 10px 10px;
+    width: 30vw;
+    border-radius: 15px;
+}
+
+.bar input {
+    padding: 2px 15px;
+    width: 100%;
+    background-color: transparent;
+    border: none;
+}
+
+.bar input:focus {
+    outline: none;
+}
+
+.bar i {
+    background-color: transparent;
+}
+
+.search-btns {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    width: 18vw;
+    padding: 6px 10px;
+}
+
+.search-btns img {
+    position: absolute;
+    height: 6vh;
+    border-radius: 50%;
+}
+
+.search-btns img:hover {
+    height: 7vh;
+}
+
+.search-btns select {
+    border: none;
+    background-color: rgb(29, 29, 29);
+    padding: 8px 12px;
+    border-radius: 12px;
+    text-align: center;
+    cursor: pointer;
+}
+
+.search-btns select:focus {
+    outline: none;
+}
+
+.search-btns button {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    border: none;
+    border-radius: 12px;
+
+    padding: 8px 20px;
+    background-color: rgb(29, 29, 29)
+}
+
+.search-btns i {
+    background-color: rgb(29, 29, 29);
+}
+
+.search .search-btns:nth-child(4) {
+    background-color: black;
+}
+
+
+.dash-body .accounts {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: space-between;
+    padding: 8px 15px;
+}
+
+.dash-body .accounts .acc-btns {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    justify-content: space-between;
+    width: 26vw;
+    padding: 6px 15px;
+}
+
+.acc-btns button {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    border: none;
+    border-radius: 12px;
+    color: black;
+    cursor: pointer;
+    font-weight: 600;
+}
+
+.acc-btns button:nth-child(1) {
+    background-color: var(--orange);
+    padding: 10px 35px;
+}
+
+.acc-btns button:nth-child(1):hover {
+    background-color: rgb(255, 133, 12);
+}
+
+.acc-btns button i {
+    background-color: transparent;
+    color: black;
+}
+
+.acc-btns button:nth-child(2) {
+    background-color: var(--yellow);
+    padding: 10px 40px;
+}
+
+.acc-btns button:nth-child(2) {
+    background-color: yellow;
+
+}
+
+.acc-btns button:nth-child(3) {
+    background-color: var(--green);
+    padding: 10px 10px;
+    font-size: large;
+}
+
+.acc-btns button:nth-child(3):hover {
+    background-color: greenyellow;
+}
+
+.dash-body .balance {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    cursor: pointer;
+}
+
+.dash-body .balance .card {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: rgb(29, 29, 29);
+    border-radius: 15px;
+    padding: 10px;
+    height: 18vh;
+    width: 20vw;
+}
+
+.dash-body .balance .card .curr {
+    display: flex;
+    background-color: transparent;
+    justify-content: space-between;
+    padding: 5px;
+}
+.dash-body .balance .card .curr h6{
+    background-color: transparent;
+    color: gray;
+}
+.dash-body .balance .card .curr i{
+    display: none;
+}
+.dash-body .balance .card .bal{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    background-color: transparent;
+}
+.dash-body .balance .card .bal h5{
+    background-color: transparent;
+    color: rgb(157, 157, 157);
+    font-weight: bold;
+}
+.dash-body .balance .card .bal h1{
+    background-color: transparent;
+}
+.dash-body .balance  .selected{
+    background-color: var(--main);
+    transition: all 0.3s ease-in;
+}
+.dash-body .balance  .selected .curr h6{
+    background-color: rgb(29, 29, 29);
+    padding: 5px;
+    text-align: center;
+    border-radius: 12px;
+    color: #fff;
+}
+.dash-body .balance  .selected .curr i{
+    background-color: transparent;
+    display: contents;
+}
+
+.dash-body .stats{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin: 0.8rem;
+}
+
+.dash-body .stats .days {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 2px 2px 2px 2px;
+    border-radius: 15px;
+    background-color: rgb(29, 29, 29);
+    margin-right: 1rem;
+}
+.dash-body .stats .days button{
+    background-color: transparent;
+    border: none;
+    padding: 7px 12px 7px 12px;
+    cursor: pointer;
+    border-radius: 12px;
+    transition: all 0.3s ease;
+}
+.dash-body .stats .days .selected{
+    background-color: var(--main);
+}
+
+.dash-body .stats .days button:hover {
+    background-color: var(--main);
+}
+
+.dash-body .stat-graph{
+    display: flex;
+    justify-content: space-between;
+}
+
+.dash-body .stat-graph .card{
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    width: 27vw;
+    height: 20vh;
+    background-color: rgb(29, 29, 29);
+    border-radius: 20px;
+}
+
+.dash-body .stat-graph .card .header {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    justify-content: space-between;
+    background-color: transparent;
+    padding: 5px;
+
+}
+.dash-body .stat-graph .card .header  i {
+    background-color: rgb(62, 79, 62);
+    color: var(--green);
+    border-radius: 5px;
+    padding: 5px;
+}
+
+.dash-body .stat-graph .card .header  h6 {
+    background-color: transparent;
+    color: var(--green);
+}
+.dash-body .stat-graph .card .header  h6 i {
+    background-color: transparent;
+
+}
+.dash-body .stat-graph .card .graph-body {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: space-between;
+    gap: 2rem;
+    background-color: transparent;
+    padding: 10px;
+}
+.dash-body .stat-graph .card .graph-body .amount {
+    display: flex;
+    flex-direction: column;
+    height: 10vh;
+    justify-content: space-around;
+    background-color: transparent;
+}
+
+.dash-body .stat-graph .card .graph-body .amount  h5 {
+    background-color: transparent;
+}
+.dash-body .stat-graph .card .graph-body .amount  h2 {
+    background-color: transparent;
+}
+.dash-body .stat-graph .card .graph-body .graph {
+    background-color: transparent;
+    max-width: 15vw;
+    max-height: 13vh;
+}

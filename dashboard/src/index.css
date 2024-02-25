@@ -1,0 +1,24 @@
+@import url('https://fonts.googleapis.com/css2?family=Belanosima&family=Ubuntu&display=swap');
+
+* {
+  padding: 0%;
+  margin: 0%;
+  box-sizing: border-box;
+  letter-spacing: 2px;
+  background-color: black;
+  color: #fff;
+  font-family: 'Belanosima', sans-serif;
+  font-family: 'Ubuntu', sans-serif;
+}
+
+html::-webkit-scrollbar {
+  display: none;
+}
+
+:root{
+  --main : #593EFF;
+  --mainHover : #725df7;
+  --orange : #FF614B;
+  --yellow : #ffe956;
+  --green : #59FCAA;
+}
